@@ -16,6 +16,41 @@ body {
 
 
 
+#ctn-bars-search {
+    padding: 5px;
+}
+
+#ctn-bars-search input {
+    border-radius: 50px;
+    width: 0px;
+    height: 0px;
+    font-size: 14px;
+    color: black;
+    outline: none;
+    border: 0px solid black;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+}
+
+#ctn-bars-search i {
+    width: 40px;
+    top: 0;
+    right: 0;
+    line-height: 40px;
+    background-color: orange;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+#ctn-bars-search:hover input {
+    width: 240px;
+    height: 30px;
+    border: 1px solid black;
+
+}
+
 a {
     color: black;
     text-decoration: none;
@@ -48,6 +83,7 @@ ul {
     align-items: center;
     height: 60px;
     padding: 20px 0;
+    width: 90%;
 }
 
 .nav-brand {
@@ -69,7 +105,8 @@ ul {
 }
 
 .nav-main ul li a:hover {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid blue;
+    color: rgb(100, 150, 241);
 }
 
 .nav-main ul.nav-menu {
@@ -82,7 +119,6 @@ ul {
 .showcase {
     width: 100%;
     height: 550px;
-    background: url('./img/showcase.jpg') no-repeat center center/cover;
     padding: 20px;
     margin-bottom: 40px;
     display: flex;
@@ -90,6 +126,27 @@ ul {
     align-items: center;
     justify-content: flex-end;
     color: black;
+    
+}
+
+.scrif {
+    align-items: center;
+    padding: 1px;
+    display: inline-block;
+    text-align: center;
+    flex-direction: column;
+    margin-left: 18%;
+    padding: 20px;
+    margin-top: 50px ;
+    margin-bottom:30px;
+    background: url(./img/showcase.jpg);
+    outline: 0;
+    padding: 0;
+    
+}
+
+.slider p {
+    text-align: center;
     
 }
 
@@ -227,6 +284,10 @@ hr {
     line-height: 2.5;
 }
 
+.footer-container ul li a {
+    color: blanchedalmond;
+}
+
 .footer {
     background: #2f3640;
     color: #616161;
@@ -235,6 +296,43 @@ hr {
     text-align: center;
     padding-bottom: 20px;
 }
+
+#box-search {
+    position: absolute;
+    top: 10;
+    margin-left: 470px;
+    margin-bottom: 10px;
+    width:240px;
+    background: white;
+    left: 25%;
+    overflow: hidden;
+    display: none;
+    border-radius: 20px;
+   
+}
+
+#box-search li a{
+    display: block;
+    width: 800px;
+    color: black;
+    padding: 5px 10px;
+    
+}
+
+#box-search li a:hover {
+    background-color:rgb(184, 181, 181);
+}
+
+#box-search li {
+    list-style: none;
+}
+
+#box-search li a i {
+    margin-right: 10px;
+    color: blue
+}
+
+
 
 @media (max-width: 700px) {
 

@@ -22,65 +22,115 @@
         <i class="fas fa-bars"></i>
     </div>
 
+    
+    
+
     <div class="container">
         <nav class="nav-main">
             <img src="img/brand.png" alt="Anto Logo", class="nav-brand">
             <ul class="nav-menu">
                 <li>
-                    <a href="#">Acerca de nosotros</a>
+                    <a href="./es/acerca_de_nosotros.html">Acerca de nosotros</a>
                 </li>
                 <li>
-                    <a href="#">Contactanos</a>
+                    <a href="./es/contacto.html">Contactanos</a>
                 </li>
                 <li>
-                    <a href="#">Experiencia</a>
+                    <a href="./es/experiencia.html">Experiencia</a>
                 </li>
                 <li>
-                    <a href="#">Empleos</a>
+                    <a href="./es/empleos.html">Empleos</a>
                 </li>
                 <li>
-                    <a href="#">Preguntas frecuentes</a>
+                    <a href="./es/preguntas_frecuentes.html">Preguntas frecuentes</a>
                 </li>
                
             </ul>
-            <ul class="nav-menu-right">
+            <ul id="ctn-bars-search">
                 <li>
+                    <input type="text" id="inputSearch" placeholder="Buscar" required>
                     <a href="#"></a>
                     <i class="fas fa-search"></i>
                 </li>
             </ul>
+    </div>
+
+    <ul id="box-search">
+        <li><a href="./es/contacto.html"><i class="fas fa-search"></i>HTML</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>CSS</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>JS</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>Py</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>C#</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>C++</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>jaja</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>jeje</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>jiji</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>jojo</a></li>
+    </ul>
+                
 
         </nav>
         <hr>
 
         <!--Showcase-->
-        <header class="showcase">
-            <h2 class="last-call">Anto™</h2>
-            <p class="letter">Unete a nosotros en 4 sencillos pasos! <br> Tu tambien puedes ser parte de anto :)
-            </p>
-            <a href="#" class="btn">Lee mas <i class="fas fa-angle-double-right"></i></a>
-        </header>
+
+        <div class="slider">
+            <a href="./es/empleos.html">
+            <img class="scrif" name="slider" width="800" height="500">
+            </a>
+        </div>
+       
+
+        <script>
+            window.addEventListener('load', function () {
+                console.log('el contenido ha cargado');
+
+                var imagenes = [];
+                var tiempo = (10000);
+
+                imagenes[0] = './img/contrato.jpg'
+                imagenes[1] = './img/encuesta.png'
+
+
+                var indiceImagenes = 0;
+
+                function cambiarImagenes() {
+
+                    document.slider.src = imagenes[indiceImagenes];
+                    
+                    if (indiceImagenes < 1) {
+                        indiceImagenes++;
+                    } else {
+                        indiceImagenes = 0;
+                    }
+
+                }
+
+                setInterval(cambiarImagenes, tiempo);
+
+            });
+        </script>
+    
 
         <!--New cards-->
         <div class="news-cards">
             <div>
                 <img src="img/img1.png" alt="">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae ullam atque ab illo et possimus veniam minima ex aperiam.</p>
+                <h3>Localizaciones</h3>
+                <p>Por el momento solo contamos con un lugar de trabajo, puedes visitarnos en: <br> La Paz, Cristal &, El Rubi, 22180 Tijuana, B.C.</p>
                 <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
 
             </div>
             <div>
                 <img src="img/brand.png" alt="">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae ullam atque ab illo et possimus veniam minima ex aperiam.</p>
-                <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
+                <h3>Empresa</h3>
+                <p>Anto™ es un call center en el cual hay personal especalista calificado para tratar perfectamente con los clientes para algun servicio, estamos abiertos a que cualquier empresa quiera contratar nuestro servicio</p>
 
             </div>
             <div>
                 <img src="img/img2.png" alt="">
-                <h3>Lorem, ipsum dolor.</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae ullam atque ab illo et possimus veniam minima ex aperiam.</p>
+                <h3>Contactanos</h3>
+                <p>Para contactar con alguna persona de nuestra empresa, puedes usar los siguientes medios <br> <b>Telefono:</b> 664 111 1111 <br> <b>Email:</b> infoantoservices@gmail.com <br> <b>Whatsapp:</b> 664 222 2222</p>
                 <a href="#">Learn More <i class="fas fa-angle-double-right"></i></a>
 
             </div>
@@ -88,10 +138,13 @@
         
         <section class="cards-banner-one">
             <div class="content">
-                <h2>Lorem, ipsum dolor.</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero laudantium quod ipsum qui nihil enim dolore odit voluptate. Exercitationem, molestiae?</p>
-                <a href="#" class="btn">Mas <i class="fas fa-double-angle-right"></i></a>
+                <h2>Colabora con Anto!</h2>
+                <p>Eres una empresa y quieres promocionar, ofrecer u anunciar tu servicio por medio telefonico? <br> Si es asi, en anto tenemos un personal calificado para esto, contactanos para poder colaborar... 
+                </p>
+                <a href="./es/contacto.html" class="btn">Leer mas <i class="fas fa-double-angle-right"></i></a>
             </div>
+
+        
 
         </section>
 
@@ -117,12 +170,12 @@
             <ul>
                 <li>
                     <a href="#">
-                        <h3>Title One</h3>
+                        <h3>Terminos y Condiciones</h3>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <h3>Title One</h3>
+                        <h3>Politicas de Privacidad</h3>
                     </a>
                 </li>
                 <li>
