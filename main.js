@@ -3,11 +3,6 @@ document.querySelector('.menu-btn').addEventListener('click', () => {
 });
 
 
-ScrollReveal().reveal('.news-cards', {delay: 300});
-ScrollReveal().reveal('.cards-banner-one', {delay: 300});
-
-
-
 //Ejecucion de funciones//
 
 document.getElementById("inputSearch").addEventListener("keyup", buscador_interno);
