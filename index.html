@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="./img/brand.png"/>
+    <link rel="icon" type="image/png" href="./img/marca2.png"/>
 </head>
 <body>
     
@@ -27,22 +27,22 @@
 
     <div class="container">
         <nav class="nav-main">
-            <img src="img/brand.png" alt="Anto Logo", class="nav-brand">
+            <img src="img/marca1.png" alt="Anto Logo", class="nav-brand">
             <ul class="nav-menu">
                 <li>
-                    <a href="./es/acerca_de_nosotros.html">Acerca de nosotros</a>
+                    <a href="#acerca">Acerca de nosotros</a>
                 </li>
                 <li>
-                    <a href="./es/contacto.html">Contactanos</a>
+                    <a href="#encuesta">Contactanos</a>
                 </li>
                 <li>
-                    <a href="./es/experiencia.html">Experiencia</a>
+                    <a href="./es/valores.html">Mision y Valores</a>
                 </li>
                 <li>
-                    <a href="./es/empleos.html">Empleos</a>
+                    <a href="./es/empresa.html">Empleo</a>
                 </li>
                 <li>
-                    <a href="./es/preguntas_frecuentes.html">Preguntas frecuentes</a>
+                    <a href="./es/preguntas_frecuentes.html">FAQ</a>
                 </li>
                
             </ul>
@@ -56,23 +56,29 @@
     </div>
 
     <ul id="box-search">
-        <li><a href="./es/contacto.html"><i class="fas fa-search"></i>HTML</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>CSS</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>JS</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>Py</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>C#</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>C++</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>jaja</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>jeje</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>jiji</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>jojo</a></li>
+        <li><a href="./es/preguntas_frecuentes.html"><i class="fas fa-search"></i>FAQ</a></li>
+        <li><a href="./es/empresa.html"><i class="fas fa-search"></i>Empresa</a></li>
+        <li><a href="#encuesta"><i class="fas fa-search"></i>Contacto</a></li>
+        <li><a href="./es/valores.html"><i class="fas fa-search"></i>Mision</a></li>
+        <li><a href="./es/valores.html"><i class="fas fa-search"></i>Valores</a></li>
+        <li><a href="#redes"><i class="fas fa-search"></i>Redes sociales</a></li>
+        <li><a href="./es/empresa.html"><i class="fas fa-search"></i>Colaboracion</a></li>
+        <li><a href="./es/preguntas_frecuentes.html"><i class="fas fa-search"></i>Preguntas frecuentes</a></li>
+        <li><a href="#pie"><i class="fas fa-search"></i>Terminos y condiciones</a></li>
+        <li><a href="#acerca"><i class="fas fa-search"></i>Acerca de nosotros</a></li>
+        <li><a href="#pie"><i class="fas fa-search"></i>Politicas de Privacidad</a></li>
     </ul>
                 
 
         </nav>
         <hr>
 
+        <!--Slogan-->
+
+        <h3 class="antojo"> Anto "Antojo de ayudar"</h3>
+
         <!--Showcase-->
+
 
         <div class="slider">
           
@@ -81,11 +87,11 @@
         </div>
        
 
-       
+        
     
 
         <!--New cards-->
-        <div class="news-cards">
+        <div id="acerca"class="news-cards">
             <div>
                 <img src="img/img1.png" alt="">
                 <h3>Localizaciones</h3>
@@ -94,7 +100,7 @@
 
             </div>
             <div>
-                <img src="img/brand.png" alt="">
+                <img src="img/marca1.png" alt="">
                 <h3>Empresa</h3>
                 <p>Anto™ es un call center en el cual hay personal especalista calificado para tratar perfectamente con los clientes para algun servicio, estamos abiertos a que cualquier empresa quiera contratar nuestro servicio</p>
 
@@ -113,16 +119,46 @@
                 <h2>Colabora con Anto!</h2>
                 <p>Eres una empresa y quieres promocionar, ofrecer u anunciar tu servicio por medio telefonico? <br> Si es asi, en anto tenemos un personal calificado para esto, contactanos para poder colaborar... 
                 </p>
-                <a href="./es/contacto.html" class="btn">Leer mas <i class="fas fa-double-angle-right"></i></a>
+                
             </div>
 
         
 
         </section>
 
+        <section id="encuesta">
+            <div class="inicio">
+                <h3>Llena los siguientes datos para contactarnos</h3>
+                <form action="./es/contacto.html" method="get">
+                <label>Nombre: <input type="text" required id="name"></label><br>
+                 <label>Apellido: <input type="text" required id="lastname"></label><br>
+                 <label>Correo electronico: <input type="email" id="correoe" placeholder="Ej. ejemplo123@ejemlpo.com" ></label><br>
+                 <label>Numero telefonico: <input type="number" name="telefono" id="telefono" placeholder=" Ej. 664 111 1111" required></label> <br>
+                 <label>Estado: <input list="Estados" id="estado" required>
+                 <datalist id="Estados">
+                     <option value="Baja California">
+                     <option value="Baja California Sur">
+                     <option value="Sonora">
+                     <option value="Chihuahua">
+                     <option value="Oaxaca">
+                </datalist>
+                 </label> <br>
+                 <span>Sexo:</span>
+                 Femenino: <input type="radio" id="mujer" name="sexo" required/>
+                 Masculino: <input type="radio" id="hombre" name="sexo" required/>
+                 <label>Motivo de consulta: <textarea name="motivo" id="motivo" cols="30" rows="5" required></textarea></label> <br>
+                 
+                <input class="subir" type="submit" value="Confirmar">
+            </div>
+        
+            
+        </form>
+        
+        </section>
+
         <section class="social">
             <p>Para mas informacion, encuentranos en estas redes sociales</p>
-            <div class="links">
+            <div id="redes" class="links">
                 <a href="https://www.facebook.com/anto.serv.3">
                     <i class="fab fa-facebook-f"></i>
                 </a>
@@ -137,7 +173,7 @@
 
     </div>
 
-    <div class="footer-links">
+    <div id="pie" class="footer-links" >
         <div class="footer-container">
             <ul>
                 <li>
@@ -150,123 +186,32 @@
                         <h3>Politicas de Privacidad</h3>
                     </a>
                 </li>
+            </ul>
+            <ul>
                 <li>
                     <a href="#">
-                        <h3>Title One</h3>
+                        <h3>Mision</h3>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <h3>Title One</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>Title One</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>Title One</h3>
+                        <h3>Valores</h3>
                     </a>
                 </li>
             </ul>
             <ul>
                 <li>
                     <a href="#">
-                        <h3>Title One</h3>
+                        <h3>FAQ</h3>
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <h3>Title One</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>Title One</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>Title One</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>Title One</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>Title One</h3>
+                        <h3>Acerca de nosotros</h3>
                     </a>
                 </li>
             </ul>
-            <ul>
-                <li>
-                    <a href="#">
-                        <h3>Title One</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>Title One</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>Title One</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>Title One</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>Title One</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>Title One</h3>
-                    </a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#">
-                        <h3>Title One</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>Title One</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>Title One</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>Title One</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>Title One</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <h3>Title One</h3>
-                    </a>
-                </li>
-            </ul>
+            
         </div>
     </div>
 

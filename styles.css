@@ -114,6 +114,21 @@ ul {
     margin-left: 20px;
 }
 
+
+/* Slogan */
+
+.antojo {
+    background-color: aqua;
+    width: 20%;
+    text-align: center;
+    padding: 5px;
+    margin-left: 40%;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 35px;
+}
+
+
 /* showcase */
 
 .showcase {
@@ -137,8 +152,8 @@ ul {
     flex-direction: column;
     margin-left: 18%;
     padding: 20px;
-    margin-top: 50px ;
-    margin-bottom:30px;
+    margin-top: 20px ;
+    margin-bottom:60px;
     background: url(./img/empleados.jpg);
     outline: 0;
     padding: 0;
@@ -163,7 +178,7 @@ ul {
     border: 0px;
     font-weight: bold;
     padding: 10px 20px;
-    background: #262626;
+    background:rgb(39, 39, 226);
     color: white;
     font-size: 15px;
     border: 1px solid white;
@@ -223,14 +238,14 @@ hr {
     width: 100%;
     height: 200px;
     margin-bottom: 60px;
-    background:gray;
+    background-color:rgb(170, 184, 247);
     
 }
 
 .cards-banner-one .content{
     width: 40%;
     padding: 8px 0 0 30px;
-    color: white;
+    color:black;
 }
 
 /* Social */
@@ -270,7 +285,7 @@ hr {
 
 .footer-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 2fr);
     gap: 10px;
     align-items: flex-start;
     justify-content: center;
@@ -330,6 +345,71 @@ hr {
 #box-search li a i {
     margin-right: 10px;
     color: blue
+}
+
+
+/* encuesta */
+.inicio {
+    background-color:rgb(170, 184, 247);
+    margin-bottom: 50px;
+    font-family: Arial;
+    margin-left: 10%;
+    margin-right: 50px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.inicio h3 {
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(39, 39, 226);
+    border-radius: 10px;
+}
+
+.inicio label {
+    padding: 10px;
+    display: grid;
+}
+
+.subir{
+    padding: 10px 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+    outline: black;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.subir:hover {
+    opacity: .8;
+    background-color: antiquewhite;
+}
+
+#motivo {
+    width: 60%;
+    
+}
+
+#name, #correoe, #telefono, #lastname,#estado {
+
+    width: 40%;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+span {
+    margin-left: 10px;
+}
+
+textarea {
+    padding: 10px;
 }
 
 

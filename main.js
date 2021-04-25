@@ -3,6 +3,7 @@ document.querySelector('.menu-btn').addEventListener('click', () => {
 });
 
 
+
 //Ejecucion de funciones//
 
 document.getElementById("inputSearch").addEventListener("keyup", buscador_interno);
