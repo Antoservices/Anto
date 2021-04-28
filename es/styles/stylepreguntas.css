@@ -184,7 +184,7 @@ hr {
     border-radius: 15px;
 }
 
-#preguntas p {
+#preguntas iframe {
     background-color: rgb(250, 181, 154);
     margin-right: 45%;
     margin-left: 1%;
