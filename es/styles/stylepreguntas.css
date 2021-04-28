@@ -189,8 +189,17 @@ hr {
     margin-right: 45%;
     margin-left: 1%;
     padding: 10px;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
     border-radius: 20px;
+}
+
+#preguntas p {
+    margin-bottom: 50px;
+    margin-left: 15px;
+    background-color: lightsalmon;
+    margin-right: 80%;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 /* footer links */
