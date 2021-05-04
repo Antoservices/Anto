@@ -165,4 +165,40 @@ hr {
     color: blue
 }
 
+/* Empleo */
+
+.empleo h1 {
+    background-color: lightsalmon;
+    border-radius: 30px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.empleo p {
+    background-color: rgb(252, 175, 145);
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.empleo p button {
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+.empleo p button:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+
+
 
