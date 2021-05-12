@@ -202,7 +202,7 @@ hr {
 
 /* spot de radio */
 
-#radio {
+#radio, #vidio {
     width: 520px;
     height: 320px;
     margin-top: 30px;
