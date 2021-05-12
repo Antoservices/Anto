@@ -391,7 +391,7 @@ hr {
     
 }
 
-#name, #correoe, #telefono, #lastname,#estado {
+#name, #correoe, #telefono, #lastname,#estado, #fecha {
 
     width: 40%;
 }
